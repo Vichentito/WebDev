@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registrar alumno</title>
+</head>
+<body>
+	<h1 align="center">Registrar alumno</h1>
+	<form action="http://localhost:8080/Lab2/Registro" method="post">
+		<label for="nombre">Nombre(s):</label>
+		<br>
+		<input type="text" id="nombre" name="nombre">
+		<br>
+		<label for="ap1">Apellido:</label>
+		<input type="text" id="ap1" name="ap1">
+		<br>
+		<label for="boleta">Boleta:</label>
+		<br>
+		<input type="text" id="boleta" name="boleta">
+		<br>
+		<label for="carrera">Carrera:</label>
+		<br>
+		<select id="carrera" name="carrera">
+			<option selected disabled value="0">Selecciona una opción</option>
+			<option value="1">Ingenieria Aeronautica</option>
+			<option value="2">Ingenieria Ambiental</option>
+			<option value="3">Ingenieria Biotecnológica</option>
+			<option value="4">Ingenieria en Sistemas Computacionales</option>
+		</select>
+		<br>
+		<label for="direccion">Dirección:</label>
+		<br>
+		<textarea id="direccion" name="direccion" rows="5" cols="40"></textarea>
+		<br><br>
+		<input type="submit" value="Registrar">
+	</form>
+</body>
+</html>
